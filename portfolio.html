@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Портфолио — Никита Митрохин</title>
+<meta name="site-title-ru" content="Портфолио — Никита Митрохин">
+<meta name="site-title-en" content="Portfolio — Nikita Mitrokhin">
+<meta name="description" content="Примеры проектов Никиты Митрохина: DevPocket (C# / Avalonia UI), бот-парсер с AI на Python, CodeMe (C# + ИИ), GeneratorXML на Delphi.">
+<meta name="theme-color" content="#070d1f">
+<meta name="color-scheme" content="dark">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<a class="sr-only" href="#main">Перейти к содержимому</a>
+
+<header class="nav">
+  <div class="container nav__inner">
+    <a href="index.html" class="nav__logo" aria-label="На главную"><span class="nav__logo-mark">&lt;/&gt;</span></a>
+    <nav class="nav__links" aria-label="Основная навигация">
+      <a href="index.html" data-i18n="nav.home">Главная</a>
+      <a href="services.html" data-i18n="nav.services">Услуги</a>
+      <a href="portfolio.html" class="is-active" data-i18n="nav.portfolio">Портфолио</a>
+      <a href="about.html" data-i18n="nav.about">Обо мне</a>
+      <a href="contacts.html" data-i18n="nav.contacts">Контакты</a>
+    </nav>
+    <div class="nav__right">
+      <div class="lang" role="group" aria-label="Язык сайта / Site language">
+        <button class="lang__btn is-active" type="button" data-lang="ru">RU</button>
+        <button class="lang__btn" type="button" data-lang="en">EN</button>
+      </div>
+      <a class="btn btn--sm btn--primary" href="https://t.me/ceo_csharp" target="_blank" rel="noopener noreferrer" data-i18n="nav.cta">Написать мне</a>
+      <button class="burger" id="burger" type="button" aria-label="Меню" aria-expanded="false" aria-controls="mmenu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<nav class="mmenu" id="mmenu" aria-label="Мобильная навигация">
+  <a href="index.html" data-i18n="nav.home">Главная</a>
+  <a href="services.html" data-i18n="nav.services">Услуги</a>
+  <a href="portfolio.html" class="is-active" data-i18n="nav.portfolio">Портфолио</a>
+  <a href="about.html" data-i18n="nav.about">Обо мне</a>
+  <a href="contacts.html" data-i18n="nav.contacts">Контакты</a>
+  <a class="btn btn--primary" href="https://t.me/ceo_csharp" target="_blank" rel="noopener noreferrer" data-i18n="nav.cta">Написать мне</a>
+</nav>
+
+<main id="main">
+
+<section class="phead">
+  <div class="phead__bg" aria-hidden="true"><span class="orb"></span><span class="orb orb--b"></span></div>
+  <div class="container phead__inner">
+    <span class="eyebrow" data-i18n="nav.portfolio">Портфолио</span>
+    <h1 data-i18n="pf.page.title">Портфолио</h1>
+    <p data-i18n="pf.page.lead">Проекты, о которых могу рассказать. Детали под NDA не публикую, но на созвоне покажу и объясню больше.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="pf">
+
+      <!-- Проект 1: DevPocket -->
+      <article class="pf__item reveal">
+        <div class="pf__media">
+          <button class="shot" type="button" data-full="assets/img/work1-1.jpg" aria-label="Скриншот DevPocket: главное окно">
+            <img src="assets/img/work1-1.jpg" alt="Интерфейс DevPocket — библиотека сниппетов и заметок" loading="lazy"
+                 onerror="this.style.display='none'; this.nextElementSibling.style.display='grid'">
+            <span class="shot__ph" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="9" r="2"/><path d="M21 15l-5-5L5 21"/></svg>
+              <span data-i18n="pf.ph">Скриншот проекта</span>
+              <small>work1-1.jpg</small>
+            </span>
+          </button>
+          <div class="pf__gallery">
+            <button class="pf__thumb" type="button" data-full="assets/img/work1-1.jpg" aria-label="Скриншот 1">
+              <img src="assets/img/work1-1.jpg" alt="Скриншот 1" loading="lazy"
+                   onerror="this.style.display='none'; this.nextElementSibling.style.display='grid'">
+              <span class="shot__ph" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/></svg>
+                <small>1-1</small>
+              </span>
+            </button>
+            <button class="pf__thumb" type="button" data-full="assets/img/work1-2.jpg" aria-label="Скриншот 2">
+              <img src="assets/img/work1-2.jpg" alt="Скриншот 2" loading="lazy"
+                   onerror="this.style.display='none'; this.nextElementSibling.style.display='grid'">
+              <span class="shot__ph" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/></svg>
+                <small>1-2</small>
+              </span>
+            </button>
+            <button class="pf__thumb" type="button" data-full="assets/img/work1-3.jpg" aria-label="Скриншот 3">
+              <img src="assets/img/work1-3.jpg" alt="Скриншот 3" loading="lazy"
+                   onerror="this.style.display='none'; this.nextElementSibling.style.display='grid'">
+              <span class="shot__ph" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/></svg>
+                <small>1-3</small>
+              </span>
+            </button>
+          </div>
+        </div>
+        <div class="pf__body">
+          <span class="pf__tag" data-i18n="pf.1.tag">Десктоп · .NET 10</span>
+          <h3 data-i18n="pf.1.t">DevPocket — органайзер кода и технических заметок</h3>
+          <p class="pf__stack mono" data-i18n="pf.1.s">C# · .NET 10 · Avalonia UI · SQLite (WAL) · TextMate</p>
+          <div class="pf__rows">
+            <div class="pf__row"><span class="pf__k" data-i18n="pf.task">Задача</span><span class="pf__v" data-i18n="pf.1.task">Создать 100% автономное desktop-приложение для разработчиков: быстрый доступ к сниппетам кода, техническим заметкам и шаблонам без серверов, облаков и телеметрии.</span></div>
+            <div class="pf__row"><span class="pf__k" data-i18n="pf.solution">Решение</span><span class="pf__v" data-i18n="pf.1.solution">Приложение на C# / .NET 10 с MVVM-архитектурой и кроссплатформенным GUI на Avalonia UI 12. Встроен редактор кода с подсветкой синтаксиса TextMate для 24 языков, локальная база SQLite с миграциями, многокритериальный поиск и горячие клавиши.</span></div>
+            <div class="pf__row"><span class="pf__k" data-i18n="pf.result">Результат</span><span class="pf__v" data-i18n="pf.1.result">Молниеносный запуск, оффлайн-работа, экспорт в файлы с правильными расширениями, связывание заметок со сниппетами и надёжное локальное хранение данных.</span></div>
+          </div>
+          <div class="pf__foot">
+            <a class="btn btn--ghost btn--sm" href="https://t.me/ceo_csharp" target="_blank" rel="noopener noreferrer" data-i18n="pf.cta">Обсудить похожее →</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Проект 2: Бот-парсер с AI -->
+      <article class="pf__item reveal">
+        <div class="pf__media">
+          <button class="shot" type="button" data-full="assets/img/work2-1.jpg" aria-label="Скриншот проекта: бот-парсер с AI-суммаризацией">
+            <img src="assets/img/work2-1.jpg" alt="Интерфейс бота с AI-суммаризацией постов" loading="lazy"
+                 onerror="this.style.display='none'; this.nextElementSibling.style.display='grid'">
+            <span class="shot__ph" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="9" r="2"/><path d="M21 15l-5-5L5 21"/></svg>
+              <span data-i18n="pf.ph">Скриншот проекта</span>
+              <small>work2-1.jpg</small>
+            </span>
+          </button>
+          <div class="pf__gallery">
+            <button class="pf__thumb" type="button" data-full="assets/img/work2-1.jpg" aria-label="Скриншот 1">
+              <img src="assets/img/work2-1.jpg" alt="Скриншот 1" loading="lazy"
+                   onerror="this.style.display='none'; this.nextElementSibling.style.display='grid'">
+              <span class="shot__ph" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/></svg>
+                <small>2-1</small>
+              </span>
+            </button>
+            <button class="pf__thumb" type="button" data-full="assets/img/work2-2.jpg" aria-label="Скриншот 2">
+              <img src="assets/img/work2-2.jpg" alt="Скриншот 2" loading="lazy"
+                   onerror="this.style.display='none'; this.nextElementSibling.style.display='grid'">
+              <span class="shot__ph" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/></svg>
+                <small>2-2</small>
+              </span>
+            </button>
+            <button class="pf__thumb" type="button" data-full="assets/img/work2-3.jpg" aria-label="Скриншот 3">
+              <img src="assets/img/work2-3.jpg" alt="Скриншот 3" loading="lazy"
+                   onerror="this.style.display='none'; this.nextElementSibling.style.display='grid'">
+              <span class="shot__ph" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/></svg>
+                <small>2-3</small>
+              </span>
+            </button>
+          </div>
+        </div>
+        <div class="pf__body">
+          <span class="pf__tag" data-i18n="pf.2.tag">Backend · Telegram-бот</span>
+          <h3 data-i18n="pf.2.t">Бот-парсер каналов с AI-суммаризацией</h3>
+          <p class="pf__stack mono" data-i18n="pf.2.s">Python · aiogram · SQLite · DeepSeek API</p>
+          <div class="pf__rows">
+            <div class="pf__row"><span class="pf__k" data-i18n="pf.task">Задача</span><span class="pf__v" data-i18n="pf.2.task">Автоматически забирать посты из публичных Telegram-каналов и готовить по ним краткие русскоязычные резюме и дайджесты.</span></div>
+            <div class="pf__row"><span class="pf__k" data-i18n="pf.solution">Решение</span><span class="pf__v" data-i18n="pf.2.solution">Telegram-бот на aiogram: HTTP-парсер публичных лент, SQLite-хранилище, суммаризация через DeepSeek API с ретраями, фоновый планировщик sync + analyze по подпискам, команды latest/digest/status.</span></div>
+            <div class="pf__row"><span class="pf__k" data-i18n="pf.result">Результат</span><span class="pf__v" data-i18n="pf.2.result">Полностью автоматический цикл: подписка → фоновый сбор постов → готовые резюме. Покрыт тестами, работает в режиме long polling.</span></div>
+          </div>
+          <div class="pf__foot">
+            <a class="btn btn--ghost btn--sm" href="https://t.me/ceo_csharp" target="_blank" rel="noopener noreferrer" data-i18n="pf.cta">Обсудить похожее →</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Проект 3: CodeMe -->
+      <article class="pf__item reveal">
+        <div class="pf__media">
+          <button class="shot" type="button" data-full="assets/img/work3-1.jpg" aria-label="Скриншот CodeMe">
+            <img src="assets/img/work3-1.jpg" alt="Интерфейс CodeMe — контроль задач разработчика" loading="lazy"
+                 onerror="this.style.display='none'; this.nextElementSibling.style.display='grid'">
+            <span class="shot__ph" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="9" r="2"/><path d="M21 15l-5-5L5 21"/></svg>
+              <span data-i18n="pf.ph">Скриншот проекта</span>
+              <small>work3-1.jpg</small>
+            </span>
+          </button>
+          <div class="pf__gallery">
+            <button class="pf__thumb" type="button" data-full="assets/img/work3-1.jpg" aria-label="Скриншот 1">
+              <img src="assets/img/work3-1.jpg" alt="Скриншот 1" loading="lazy"
+                   onerror="this.style.display='none'; this.nextElementSibling.style.display='grid'">
+              <span class="shot__ph" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/></svg>
+                <small>3-1</small>
+              </span>
+            </button>
+            <button class="pf__thumb" type="button" data-full="assets/img/work3-2.jpg" aria-label="Скриншот 2">
+              <img src="assets/img/work3-2.jpg" alt="Скриншот 2" loading="lazy"
+                   onerror="this.style.display='none'; this.nextElementSibling.style.display='grid'">
+              <span class="shot__ph" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/></svg>
+                <small>3-2</small>
+              </span>
+            </button>
+            <button class="pf__thumb" type="button" data-full="assets/img/work3-3.jpg" aria-label="Скриншот 3">
+              <img src="assets/img/work3-3.jpg" alt="Скриншот 3" loading="lazy"
+                   onerror="this.style.display='none'; this.nextElementSibling.style.display='grid'">
+              <span class="shot__ph" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/></svg>
+                <small>3-3</small>
+              </span>
+            </button>
+          </div>
+        </div>
+        <div class="pf__body">
+          <span class="pf__tag" data-i18n="pf.3.tag">Промышленное ПО · ИИ</span>
+          <h3 data-i18n="pf.3.t">CodeMe — автоматизированная система контроля задач с ИИ</h3>
+          <p class="pf__stack mono" data-i18n="pf.3.s">C# · .NET · Windows Forms · PostgreSQL · LLM API</p>
+          <div class="pf__rows">
+            <div class="pf__row"><span class="pf__k" data-i18n="pf.task">Задача</span><span class="pf__v" data-i18n="pf.3.task">Разработать централизованную систему учёта, контроля и сопровождения задач разработчика программного обеспечения с интеллектуальным ассистентом.</span></div>
+            <div class="pf__row"><span class="pf__k" data-i18n="pf.solution">Решение</span><span class="pf__v" data-i18n="pf.3.solution">Desktop-клиент на C# с многослойным доступом к данным через PostgreSQL (Npgsql) и встроенным модулем нейросетевого анализа задач, генерации описаний и контроля сроков исполнения.</span></div>
+            <div class="pf__row"><span class="pf__k" data-i18n="pf.result">Результат</span><span class="pf__v" data-i18n="pf.3.result">Сокращение рутины при распределении задач, прозрачный контроль дедлайнов и единое рабочее пространство с интеграцией внешних моделей ИИ.</span></div>
+          </div>
+          <div class="pf__foot">
+            <a class="btn btn--ghost btn--sm" href="https://t.me/ceo_csharp" target="_blank" rel="noopener noreferrer" data-i18n="pf.cta">Обсудить похожее →</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Проект 4: GeneratorXML -->
+      <article class="pf__item reveal">
+        <div class="pf__media">
+          <button class="shot" type="button" data-full="assets/img/work4-1.jpg" aria-label="Скриншот GeneratorXML">
+            <img src="assets/img/work4-1.jpg" alt="Интерфейс GeneratorXML — экспорт структур в XML" loading="lazy"
+                 onerror="this.style.display='none'; this.nextElementSibling.style.display='grid'">
+            <span class="shot__ph" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="9" r="2"/><path d="M21 15l-5-5L5 21"/></svg>
+              <span data-i18n="pf.ph">Скриншот проекта</span>
+              <small>work4-1.jpg</small>
+            </span>
+          </button>
+          <div class="pf__gallery">
+            <button class="pf__thumb" type="button" data-full="assets/img/work4-1.jpg" aria-label="Скриншот 1">
+              <img src="assets/img/work4-1.jpg" alt="Скриншот 1" loading="lazy"
+                   onerror="this.style.display='none'; this.nextElementSibling.style.display='grid'">
+              <span class="shot__ph" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/></svg>
+                <small>4-1</small>
+              </span>
+            </button>
+            <button class="pf__thumb" type="button" data-full="assets/img/work4-2.jpg" aria-label="Скриншот 2">
+              <img src="assets/img/work4-2.jpg" alt="Скриншот 2" loading="lazy"
+                   onerror="this.style.display='none'; this.nextElementSibling.style.display='grid'">
+              <span class="shot__ph" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/></svg>
+                <small>4-2</small>
+              </span>
+            </button>
+            <button class="pf__thumb" type="button" data-full="assets/img/work4-3.jpg" aria-label="Скриншот 3">
+              <img src="assets/img/work4-3.jpg" alt="Скриншот 3" loading="lazy"
+                   onerror="this.style.display='none'; this.nextElementSibling.style.display='grid'">
+              <span class="shot__ph" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/></svg>
+                <small>4-3</small>
+              </span>
+            </button>
+          </div>
+        </div>
+        <div class="pf__body">
+          <span class="pf__tag" data-i18n="pf.4.tag">Утилиты · Конвертер</span>
+          <h3 data-i18n="pf.4.t">GeneratorXML — высокоскоростной транслятор структур в XML</h3>
+          <p class="pf__stack mono" data-i18n="pf.4.s">Delphi / FreePascal · VirtualTreeView · XLSX Engine · XML</p>
+          <div class="pf__rows">
+            <div class="pf__row"><span class="pf__k" data-i18n="pf.task">Задача</span><span class="pf__v" data-i18n="pf.4.task">Реализовать компонентный движок для мгновенного экспорта сложных древовидных структур данных и электронных таблиц Excel в валидный XML произвольной схемы.</span></div>
+            <div class="pf__row"><span class="pf__k" data-i18n="pf.solution">Решение</span><span class="pf__v" data-i18n="pf.4.solution">Модульная архитектура на Delphi/FPC: прямой парсинг .xlsx через zip-контейнеры без внешних библиотек и COM-объектов, трансляция узлов TLazVirtualStringTree, настраиваемый маппинг колонок в атрибуты/теги и кодировки UTF-8 / CP1251.</span></div>
+            <div class="pf__row"><span class="pf__k" data-i18n="pf.result">Результат</span><span class="pf__v" data-i18n="pf.4.result">Автономный исполняемый модуль без сторонних зависимостей и MS Office, скорость обработки сотен тысяч узлов в секунду и лёгкое встраивание в существующие программы.</span></div>
+          </div>
+          <div class="pf__foot">
+            <a class="btn btn--ghost btn--sm" href="https://t.me/ceo_csharp" target="_blank" rel="noopener noreferrer" data-i18n="pf.cta">Обсудить похожее →</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Проект 5: Заготовка под заказчика -->
+      <article class="pf__item reveal">
+        <div class="pf__media">
+          <div class="shot" role="presentation">
+            <span class="shot__ph" style="display:grid">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 5v14M5 12h14"/></svg>
+              <span data-i18n="pf.5.t">Здесь может быть ваш проект</span>
+              <small></small>
+            </span>
+          </div>
+        </div>
+        <div class="pf__body">
+          <span class="pf__tag" data-i18n="pf.5.tag">Ваш проект</span>
+          <h3 data-i18n="pf.5.t">Здесь может быть ваш проект</h3>
+          <p class="pf__stack mono" data-i18n="pf.5.s">Стек подберём под задачу</p>
+          <div class="pf__rows">
+            <div class="pf__row"><span class="pf__k" data-i18n="pf.task">Задача</span><span class="pf__v" data-i18n="pf.5.task">Опишите задачу парой предложений в Telegram — скажу, как её решить, сколько это займёт и будет ли это первый кейс в новом направлении.</span></div>
+            <div class="pf__row"><span class="pf__k" data-i18n="pf.solution">Решение</span><span class="pf__v" data-i18n="pf.5.solution">Фиксируем ТЗ письменно, называю цену и срок до старта, работаю этапами с демо.</span></div>
+            <div class="pf__row"><span class="pf__k" data-i18n="pf.result">Результат</span><span class="pf__v" data-i18n="pf.5.result">Рабочее решение, исходники и инструкция — ваши.</span></div>
+          </div>
+          <div class="pf__foot">
+            <a class="btn btn--primary btn--sm" href="contacts.html" data-i18n="cta.go">Написать в Telegram</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer__inner">
+    <span>© <span id="year">2026</span> <span data-i18n="footer.name">Никита Митрохин</span></span>
+    <nav class="footer__nav" aria-label="Навигация в подвале">
+      <a href="index.html" data-i18n="nav.home">Главная</a>
+      <a href="services.html" data-i18n="nav.services">Услуги</a>
+      <a href="about.html" data-i18n="nav.about">Обо мне</a>
+      <a href="contacts.html" data-i18n="nav.contacts">Контакты</a>
+    </nav>
+    <span class="mono" data-i18n="footer.tag">C# · Python · Delphi</span>
+  </div>
+</footer>
+
+<div class="lb" id="lb" aria-hidden="true">
+  <button class="lb__backdrop" type="button" aria-label="Закрыть" id="lbClose"></button>
+  <img class="lb__img" id="lbImg" alt="">
+  <button class="lb__x" type="button" aria-label="Закрыть">&times;</button>
+</div>
+
+<script src="assets/js/script.js"></script>
+</body>
+</html>
